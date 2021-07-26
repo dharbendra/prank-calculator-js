@@ -1,0 +1,122 @@
+*{
+    font-size: 36px;
+    font-family: 'Sofadi One', cursive;
+    box-sizing: border-box;
+
+}
+
+body{
+    /* background: linear-gradient(180deg, 
+        rgba(223, 96, 96, 1),
+        rgba(152, 146, 12, 0.7)); */
+        min-height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+.mainparent{
+    width: 500px;
+    
+    margin-top: 5rem;
+    padding: 2rem;
+    border-radius: 7px;
+    box-shadow: -4px 4px gray;
+    background: linear-gradient(180deg, rgba(223, 96, 96, 0.88) 0%, rgba(152, 146, 12, 0.616) 100%);
+}
+.result{
+    border-radius: 5px;
+    background: #fffcfc;
+    border: 1px solid black;
+    /* line-height: 2rem; */
+    padding: 5px;
+    box-shadow: -4px 4px gray;
+    margin-bottom: 1rem;
+    width: 100%;
+
+    text-align: end;
+    font-weight: bolder;
+
+
+
+}
+
+.items{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "clear clean modulus multiply"
+    "seven eight nine divide"
+    "four five six minus"
+    "one two three add"
+    "zero zero decimal equals"
+    ;
+
+}
+.items > *{
+    border: 0 solid ;
+    box-shadow: -4px 4px gray;
+    min-height: 50px;
+    border-radius: 5px;
+}
+    
+.clear{
+    grid-area: clear;
+    background: white;
+}
+.clean{
+    grid-area: clean;
+}
+.modulus{
+    grid-area: modulus;
+}
+.multiply{
+    grid-area: multiply;
+}
+.seven{
+    grid-area: seven;
+}
+.eight{
+    grid-area: eight;
+}
+.nine{
+    grid-area: nine;
+}
+.divide{
+    grid-area: divide;
+}
+.four{
+    grid-area: four;
+}
+.five{
+    grid-area: five;
+}
+.six{
+    grid-area: six;
+}
+.minus{
+    grid-area: minus;
+}
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.add{
+    grid-area: add;
+}
+.zero{
+    grid-area: zero;
+}
+.decimal{
+    grid-area: decimal;
+}
+.equals{
+    grid-area: equals;
+}
